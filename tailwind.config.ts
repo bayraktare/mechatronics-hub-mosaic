@@ -57,6 +57,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom colors based on logo
+				'vital': {
+					'green': '#2a8c75',
+					'blue': '#2756b3',
+					'purple': '#7038b0',
+					'red': '#e15b57'
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

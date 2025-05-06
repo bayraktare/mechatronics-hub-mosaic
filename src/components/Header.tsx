@@ -34,11 +34,20 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="h-10 w-10 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-white font-bold">VE</span>
+          <div className="flex items-center space-x-3">
+            <div className="h-12 w-12 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/7824ff65-1dd4-481e-af10-fe91f32746b9.png" 
+                alt="VITAL-eR Logo" 
+                className="h-12 w-auto"
+              />
             </div>
-            <span className="font-bold text-xl">VITAL-eR</span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl text-green-700">VITAL-eR</span>
+              <span className="text-xs leading-tight max-w-[180px]">
+                Visual Intelligence and Autonomous Technologies in Robotics
+              </span>
+            </div>
           </div>
           
           {/* Mobile menu button */}
@@ -57,7 +66,7 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
                   <TabsTrigger 
                     key={tab.id} 
                     value={tab.id}
-                    className="data-[state=active]:bg-primary data-[state=active]:text-white"
+                    className="data-[state=active]:bg-green-700 data-[state=active]:text-white"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -75,7 +84,7 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
                 <button
                   key={tab.id}
                   className={`px-4 py-2 rounded-md text-left ${
-                    activeTab === tab.id ? "bg-primary text-white" : "hover:bg-gray-100"
+                    activeTab === tab.id ? "bg-green-700 text-white" : "hover:bg-gray-100"
                   }`}
                   onClick={() => handleTabChange(tab.id)}
                 >
