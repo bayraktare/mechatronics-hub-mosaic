@@ -5,63 +5,53 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const Teams = () => {
   const facultyMembers = [
     {
-      name: "Dr. Sarah Chen",
-      title: "Laboratory Director",
-      specialization: "Robotic Control Systems",
-      email: "sarah.chen@mechlab.edu",
+      name: "Dr. Ertugrul Bayraktar",
+      title: "Laboratory Director, Assistant Professor",
+      specialization: "Computer Vision, Multi-Object Tracking, Object Re-identification",
+      education: "Ph.D., Istanbul Technical University Mechatronics Engineering",
+      background: "Former Postdoc Researcher at the Italian Institute of Technology, Research Assistant at ITU Mechatronics Education and Research Center",
+      email: "ertugrul.bayraktar@yildiz.edu.tr",
       image: "https://i.pravatar.cc/300?img=1",
-      initials: "SC"
-    },
-    {
-      name: "Dr. Marcus Johnson",
-      title: "Senior Researcher",
-      specialization: "Autonomous Systems",
-      email: "m.johnson@mechlab.edu",
-      image: "https://i.pravatar.cc/300?img=2",
-      initials: "MJ"
-    },
-    {
-      name: "Dr. Amina Patel",
-      title: "Assistant Professor",
-      specialization: "Smart Materials & Sensors",
-      email: "a.patel@mechlab.edu",
-      image: "https://i.pravatar.cc/300?img=3",
-      initials: "AP"
-    },
+      initials: "EB"
+    }
   ];
   
   const researchers = [
     {
-      name: "Robert Kim",
+      name: "Ahmet Yılmaz",
       title: "PhD Candidate",
-      research: "Adaptive Control for Soft Robotics",
-      email: "r.kim@mechlab.edu",
+      research: "Autonomous Vehicle Navigation Systems",
+      group: "Astrid Autonomous Vehicle Team",
+      email: "a.yilmaz@vitaler.edu",
       image: "https://i.pravatar.cc/300?img=4",
-      initials: "RK"
+      initials: "AY"
     },
     {
-      name: "Lucia Gonzalez",
+      name: "Elif Kaya",
       title: "PhD Candidate",
-      research: "Human-Robot Collaboration",
-      email: "l.gonzalez@mechlab.edu",
+      research: "AI-Based Medical Image Analysis",
+      group: "NAHAR Group",
+      email: "e.kaya@vitaler.edu",
       image: "https://i.pravatar.cc/300?img=5",
-      initials: "LG"
+      initials: "EK"
     },
     {
-      name: "David Wu",
+      name: "Mehmet Demir",
       title: "Research Assistant",
-      research: "IoT Systems for Industrial Applications",
-      email: "d.wu@mechlab.edu",
+      research: "AI-Enhanced Education Systems",
+      group: "AIMED Group",
+      email: "m.demir@vitaler.edu",
       image: "https://i.pravatar.cc/300?img=6",
-      initials: "DW"
+      initials: "MD"
     },
     {
-      name: "Elena Sokolov",
+      name: "Zeynep Yıldız",
       title: "Research Assistant",
-      research: "Computer Vision for Robotics",
-      email: "e.sokolov@mechlab.edu",
+      research: "Virtual Teaching Environments",
+      group: "VITAL-AI Group",
+      email: "z.yildiz@vitaler.edu",
       image: "https://i.pravatar.cc/300?img=7",
-      initials: "ES"
+      initials: "ZY"
     },
   ];
 
@@ -70,27 +60,31 @@ const Teams = () => {
       <div className="text-center mb-12">
         <h2 className="mb-4">Our Team</h2>
         <p className="text-lg max-w-2xl mx-auto">
-          Meet the talented researchers and faculty members driving innovation in mechatronics engineering.
+          Meet the talented researchers and faculty members driving innovation in visual intelligence and robotics.
         </p>
       </div>
       
       <h3 className="text-2xl font-medium mb-6">Faculty</h3>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+      <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 mb-12">
         {facultyMembers.map((member, index) => (
           <Card key={index} className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Avatar className="h-14 w-14">
+              <Avatar className="h-20 w-20">
                 <AvatarImage src={member.image} alt={member.name} />
                 <AvatarFallback>{member.initials}</AvatarFallback>
               </Avatar>
               <div>
                 <CardTitle className="text-xl">{member.name}</CardTitle>
-                <CardDescription>{member.title}</CardDescription>
+                <CardDescription className="text-base">{member.title}</CardDescription>
               </div>
             </CardHeader>
             <CardContent>
               <p className="font-medium">Specialization:</p>
               <p className="text-muted-foreground mb-2">{member.specialization}</p>
+              <p className="font-medium">Education:</p>
+              <p className="text-muted-foreground mb-2">{member.education}</p>
+              <p className="font-medium">Background:</p>
+              <p className="text-muted-foreground mb-2">{member.background}</p>
               <p className="font-medium">Contact:</p>
               <p className="text-muted-foreground">{member.email}</p>
             </CardContent>
@@ -110,10 +104,11 @@ const Teams = () => {
               <CardTitle className="text-lg">{researcher.name}</CardTitle>
               <CardDescription>{researcher.title}</CardDescription>
             </CardHeader>
-            <CardContent className="text-center pb-6">
+            <CardContent className="text-center pb-3">
               <p className="text-sm text-muted-foreground">{researcher.research}</p>
             </CardContent>
-            <CardFooter className="pt-0 justify-center">
+            <CardFooter className="flex-col items-center pt-0">
+              <p className="text-xs text-primary font-medium mb-1">{researcher.group}</p>
               <p className="text-xs text-muted-foreground">{researcher.email}</p>
             </CardFooter>
           </Card>

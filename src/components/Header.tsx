@@ -36,9 +36,9 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="h-10 w-10 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-white font-bold">ML</span>
+              <span className="text-white font-bold">VE</span>
             </div>
-            <span className="font-bold text-xl">MechLab</span>
+            <span className="font-bold text-xl">VITAL-eR</span>
           </div>
           
           {/* Mobile menu button */}

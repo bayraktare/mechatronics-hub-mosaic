@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="container-custom py-24 md:py-32 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 md:pr-8 space-y-6 mb-8 md:mb-0 text-center md:text-left">
           <h1 className="font-bold">
-            Mechatronics Research Laboratory
+            VITAL-eR Research Laboratory
           </h1>
           <p className="text-lg md:text-xl text-blue-100">
-            Pioneering the future of intelligent mechanical systems through interdisciplinary research and innovation.
+            Visual Intelligence and Autonomous Technologies in Robotics - Pioneering innovations in computer vision, autonomous systems, and intelligent robotics.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50">
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-full aspect-square max-w-md">
-            {/* Abstract representation of a mechatronic system */}
+            {/* Abstract representation of a vision-based autonomous system */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-3/4 h-3/4 border-4 border-blue-300 rounded-full animate-pulse opacity-20"></div>
             </div>

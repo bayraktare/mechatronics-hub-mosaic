@@ -6,53 +6,61 @@ import { Book } from "lucide-react";
 const Courses = () => {
   const coursesList = [
     {
-      code: "MECH 301",
-      title: "Introduction to Mechatronics",
-      description: "Fundamentals of mechatronic systems, combining mechanical, electronic, and software components.",
+      code: "CSE 101",
+      title: "Computer Programming and Algorithms",
+      description: "Introduction to programming concepts, algorithmic thinking, and problem-solving techniques.",
       level: "Undergraduate",
       semester: "Fall",
       credits: 3
     },
     {
-      code: "MECH 405",
-      title: "Robotic Systems Design",
-      description: "Design principles for robotic systems, including kinematics, dynamics, and control architectures.",
+      code: "CSE 201",
+      title: "Object Oriented Programming",
+      description: "Principles of object-oriented software development including classes, inheritance, polymorphism, and design patterns.",
       level: "Undergraduate",
       semester: "Spring",
-      credits: 4
+      credits: 3
     },
     {
-      code: "MECH 507",
-      title: "Advanced Control Systems",
-      description: "Modern control theory and applications in mechatronic systems, including state-space methods and digital control.",
+      code: "CSE 350",
+      title: "Introduction to Machine Learning",
+      description: "Fundamental concepts of machine learning, supervised and unsupervised learning algorithms, and their applications.",
+      level: "Undergraduate",
+      semester: "Fall",
+      credits: 3
+    },
+    {
+      code: "CSE 360",
+      title: "Introduction to Artificial Intelligence",
+      description: "Core principles of artificial intelligence, knowledge representation, reasoning, and problem solving.",
+      level: "Undergraduate",
+      semester: "Spring",
+      credits: 3
+    },
+    {
+      code: "CSE 380",
+      title: "Introduction to Image Processing",
+      description: "Basic techniques for digital image processing, enhancement, segmentation, and feature extraction.",
+      level: "Undergraduate",
+      semester: "Fall",
+      credits: 3
+    },
+    {
+      code: "MECH 550",
+      title: "Robot Vision",
+      description: "Advanced concepts in computer vision for robotics applications including object detection, tracking, and visual SLAM.",
       level: "Graduate",
       semester: "Fall",
       credits: 3
     },
     {
-      code: "MECH 602",
-      title: "Intelligent Sensors and Actuators",
-      description: "Design and application of smart sensors and actuators in mechatronic systems, including signal processing and condition monitoring.",
+      code: "MECH 560",
+      title: "Machine Vision Applications in Mechatronics Engineering",
+      description: "Implementation of vision systems in mechatronics, including industrial inspection, quality control, and autonomous navigation.",
       level: "Graduate",
       semester: "Spring",
       credits: 3
-    },
-    {
-      code: "MECH 520",
-      title: "Mechatronics Laboratory",
-      description: "Hands-on experience with sensors, actuators, microcontrollers, and real-time control of mechatronic systems.",
-      level: "Graduate",
-      semester: "Both",
-      credits: 2
-    },
-    {
-      code: "MECH 410",
-      title: "Autonomous Systems",
-      description: "Principles and applications of autonomous mechatronic systems, including navigation, perception, and decision-making.",
-      level: "Undergraduate",
-      semester: "Spring",
-      credits: 3
-    },
+    }
   ];
 
   return (
@@ -60,7 +68,7 @@ const Courses = () => {
       <div className="text-center mb-12">
         <h2 className="mb-4">Courses</h2>
         <p className="text-lg max-w-2xl mx-auto">
-          Our department offers a variety of courses in mechatronics engineering at both undergraduate and graduate levels.
+          Our department offers a variety of courses in computer vision, robotics, and artificial intelligence at both undergraduate and graduate levels.
         </p>
       </div>
       

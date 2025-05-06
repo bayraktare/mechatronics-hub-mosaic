@@ -5,7 +5,7 @@ import About from './About';
 import Courses from './Courses';
 import Teams from './Teams';
 import Contact from './Contact';
-import Projects from './Projects';
+import CustomProjects from './CustomProjects';
 import Publications from './Publications';
 
 interface TabContentProps {
@@ -44,7 +44,7 @@ const TabContent = ({ activeTab }: TabContentProps) => {
       case 'contact':
         return <Contact />;
       case 'projects':
-        return <Projects />;
+        return <CustomProjects />;
       case 'publications':
         return <Publications />;
       default:

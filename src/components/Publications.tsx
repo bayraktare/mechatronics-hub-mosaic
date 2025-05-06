@@ -1,73 +1,79 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 
 const Publications = () => {
+  const [publicationType, setPublicationType] = useState("all");
+  
   const publications = [
     {
-      title: "Adaptive Control Strategies for Dynamic Quadrupedal Locomotion",
-      authors: "Chen, S., Johnson, M., & Patel, A.",
-      journal: "IEEE Transactions on Robotics",
-      year: 2024,
-      volume: "40",
-      issue: "2",
-      pages: "412-428",
-      doi: "10.1109/TRO.2024.123456",
+      title: "Multi-Object Tracking in Complex Urban Environments Using Deep Learning",
+      authors: "Bayraktar, E., Yılmaz, A., et al.",
+      journal: "IEEE Transactions on Intelligent Transportation Systems",
+      year: 2023,
+      volume: "24",
+      issue: "3",
+      pages: "312-328",
+      doi: "10.1109/TITS.2023.123456",
       type: "Journal"
     },
     {
-      title: "Real-time Sensor Fusion for Autonomous Navigation in Unknown Environments",
-      authors: "Kim, R., Gonzalez, L., & Chen, S.",
-      conference: "International Conference on Intelligent Robots and Systems (IROS)",
-      location: "Munich, Germany",
+      title: "Object Re-identification for Autonomous Driving: A Comprehensive Survey",
+      authors: "Bayraktar, E., Demir, M.",
+      journal: "Computer Vision and Image Understanding",
+      year: 2022,
+      volume: "215",
+      pages: "103324",
+      doi: "10.1016/j.cviu.2022.103324",
+      type: "Journal"
+    },
+    {
+      title: "Deep Learning Approaches for Medical Image Classification in Gastrointestinal Disease Diagnosis",
+      authors: "Kaya, E., Bayraktar, E., et al.",
+      journal: "Medical Image Analysis",
       year: 2023,
-      pages: "237-244",
-      doi: "10.1109/IROS.2023.789012",
+      volume: "82",
+      pages: "102642",
+      doi: "10.1016/j.media.2023.102642",
+      type: "Journal"
+    },
+    {
+      title: "AI-Enhanced Virtual Tutors for Engineering Education: An Evaluation Framework",
+      authors: "Yıldız, Z., Bayraktar, E.",
+      conference: "International Conference on Advanced Learning Technologies (ICALT)",
+      location: "Istanbul, Turkey",
+      year: 2023,
+      pages: "178-185",
+      doi: "10.1109/ICALT.2023.789012",
       type: "Conference"
     },
     {
-      title: "Soft Robotic Actuators with Embedded Sensing for Delicate Object Manipulation",
-      authors: "Patel, A., Wu, D., & Johnson, M.",
-      journal: "Soft Robotics",
-      year: 2023,
-      volume: "10",
-      issue: "3",
-      pages: "178-192",
-      doi: "10.1089/soro.2023.0045",
-      type: "Journal"
-    },
-    {
-      title: "Machine Learning Approaches for Predictive Maintenance in Industrial Mechatronic Systems",
-      authors: "Wu, D., Sokolov, E., & Chen, S.",
-      journal: "Journal of Manufacturing Systems",
-      year: 2023,
-      volume: "67",
-      issue: "1",
-      pages: "52-68",
-      doi: "10.1016/j.jmsy.2023.01.005",
-      type: "Journal"
-    },
-    {
-      title: "Human-Robot Collaboration Frameworks for Assembly Operations: A Systematic Review",
-      authors: "Gonzalez, L., Chen, S., & Kim, R.",
-      journal: "Robotics and Computer-Integrated Manufacturing",
-      year: 2022,
-      volume: "75",
-      pages: "102310",
-      doi: "10.1016/j.rcim.2022.102310",
-      type: "Journal"
-    },
-    {
-      title: "Vision-Based Object Detection and Grasping for Autonomous Robots",
-      authors: "Sokolov, E., Kim, R., & Patel, A.",
+      title: "Surface Defect Detection in Manufacturing Using Attention-Based Deep Neural Networks",
+      authors: "Bayraktar, E., Demir, M., et al.",
       conference: "IEEE International Conference on Robotics and Automation (ICRA)",
-      location: "Philadelphia, USA",
+      location: "London, UK",
       year: 2022,
       pages: "5872-5879",
       doi: "10.1109/ICRA.2022.467890",
       type: "Conference"
     },
+    {
+      title: "Autonomous Navigation in Unstructured Environments: A Hybrid Approach",
+      authors: "Yılmaz, A., Bayraktar, E.",
+      conference: "International Conference on Intelligent Robots and Systems (IROS)",
+      location: "Kyoto, Japan",
+      year: 2022,
+      pages: "237-244",
+      doi: "10.1109/IROS.2022.789012",
+      type: "Conference"
+    },
   ];
+
+  const filteredPublications = publicationType === 'all' 
+    ? publications 
+    : publications.filter(pub => pub.type.toLowerCase() === publicationType);
 
   return (
     <section className="container-custom section">
@@ -76,10 +82,20 @@ const Publications = () => {
         <p className="text-lg max-w-2xl mx-auto">
           Our latest research publications in academic journals and conferences.
         </p>
+        
+        <div className="mt-6 flex justify-center">
+          <Tabs value={publicationType} onValueChange={setPublicationType}>
+            <TabsList>
+              <TabsTrigger value="all">All Publications</TabsTrigger>
+              <TabsTrigger value="journal">Journal Articles</TabsTrigger>
+              <TabsTrigger value="conference">Conference Papers</TabsTrigger>
+            </TabsList>
+          </Tabs>
+        </div>
       </div>
       
       <div className="space-y-6">
-        {publications.map((pub, index) => (
+        {filteredPublications.map((pub, index) => (
           <Card key={index} className="card-hover">
             <CardHeader className="pb-2">
               <div className="flex justify-between items-start flex-wrap gap-2">

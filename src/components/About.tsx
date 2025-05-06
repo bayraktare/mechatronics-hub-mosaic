@@ -2,23 +2,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
-  const researchAreas = [
+  const researchGroups = [
     { 
-      title: "Robotics & Automation",
-      description: "Development of intelligent robotic systems with applications in manufacturing, healthcare, and extreme environments."
+      title: "Astrid Autonomous Vehicle Team",
+      description: "Established in October 2020, this team focuses on end-to-end L5 level autonomous R&D and is located at YTU Yıldız Campus."
     },
     { 
-      title: "Smart Sensors & IoT",
-      description: "Design and implementation of advanced sensing technologies and interconnected systems for data acquisition and analysis."
+      title: "NextGen Advanced Health Assistants Research (NAHAR)",
+      description: "Proposes a systematic approach to address critical diagnostic challenges for liver and stomach diseases by establishing a strong relationship between healthcare, artificial intelligence, data science and software development."
     },
     { 
-      title: "Control Systems",
-      description: "Research on adaptive and robust control methodologies for complex mechanical and electromechanical systems."
+      title: "AIMED: AI-Driven Mechatronics Education Digitization",
+      description: "Enhances the delivery of theoretical knowledge and introduces innovative approaches to evaluating the understandability and impact of lessons taught with virtual avatars."
     },
     { 
-      title: "Human-Machine Interaction",
-      description: "Creating intuitive interfaces between humans and machines, including haptic feedback systems and augmented reality."
+      title: "VITAL-AI",
+      description: "A forward-looking initiative that empowers educators across secondary and higher education to become creative designers and producers of AI-supported digital educational content."
     },
+    { 
+      title: "Undergraduate Research Groups",
+      description: "Smaller groups for undergraduate students' graduation thesis, focusing on mobile robots and robotic arms."
+    }
   ];
 
   return (
@@ -27,29 +31,29 @@ const About = () => {
         <h2 className="mb-6 text-center">About Our Lab</h2>
         
         <p className="mb-4 text-lg">
-          The Mechatronics Research Laboratory is a multidisciplinary research facility dedicated to advancing the integration of mechanical engineering, electronics, computer science, and control engineering.
+          The Visual Intelligence and Autonomous Technologies in Robotics (VITAL-eR) is a multidisciplinary research facility dedicated to advancing computer vision, autonomous systems, and intelligent robotics.
         </p>
         
         <p className="mb-4">
-          Established in 2015, our lab brings together faculty, researchers, and students from diverse backgrounds to solve complex engineering challenges and develop innovative technologies that bridge the gap between theory and practical applications.
+          Our lab brings together faculty, researchers, and students from diverse backgrounds to solve complex challenges in visual intelligence, autonomous navigation, healthcare diagnostics, and AI-driven education.
         </p>
         
         <p>
-          We collaborate with industry partners and other academic institutions to ensure our research has real-world impact and contributes to the advancement of mechatronic systems across various sectors including manufacturing, healthcare, transportation, and energy.
+          We collaborate with industry partners and other academic institutions to ensure our research has real-world impact and contributes to the advancement of robotics and AI systems across various sectors including transportation, healthcare, education, and manufacturing.
         </p>
       </div>
       
       <div>
-        <h3 className="mb-6 text-center">Research Areas</h3>
+        <h3 className="mb-6 text-center">Research Groups</h3>
         
         <div className="grid gap-6 md:grid-cols-2">
-          {researchAreas.map((area, index) => (
+          {researchGroups.map((group, index) => (
             <Card key={index} className="card-hover">
               <CardHeader>
-                <CardTitle>{area.title}</CardTitle>
+                <CardTitle>{group.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>{area.description}</p>
+                <p>{group.description}</p>
               </CardContent>
             </Card>
           ))}
