@@ -3,20 +3,20 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-br from-green-800 to-green-600 text-white">
+    <div className="bg-gradient-to-br from-blue-800 to-blue-600 text-white">
       <div className="container-custom py-24 md:py-32 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 md:pr-8 space-y-6 mb-8 md:mb-0 text-center md:text-left">
           <h1 className="font-bold">
             VITAL-eR Research Laboratory
           </h1>
-          <p className="text-lg md:text-xl text-green-100">
+          <p className="text-lg md:text-xl text-blue-100">
             Visual Intelligence and Autonomous Technologies in Robotics - Pioneering innovations in computer vision, autonomous systems, and intelligent robotics.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <Button size="lg" className="bg-white text-green-800 hover:bg-green-50">
+            <Button size="lg" className="bg-white text-blue-800 hover:bg-blue-50">
               Our Research
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-green-800">
+            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-blue-800">
               Join Our Team
             </Button>
           </div>

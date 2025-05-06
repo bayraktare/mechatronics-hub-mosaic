@@ -43,7 +43,7 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-green-700">VITAL-eR</span>
+              <span className="font-bold text-xl text-blue-700">VITAL-eR</span>
               <span className="text-xs leading-tight max-w-[180px]">
                 Visual Intelligence and Autonomous Technologies in Robotics
               </span>
@@ -66,7 +66,7 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
                   <TabsTrigger 
                     key={tab.id} 
                     value={tab.id}
-                    className="data-[state=active]:bg-green-700 data-[state=active]:text-white"
+                    className="data-[state=active]:bg-blue-700 data-[state=active]:text-white"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -84,7 +84,7 @@ const Header = ({ activeTab, onTabChange }: HeaderProps) => {
                 <button
                   key={tab.id}
                   className={`px-4 py-2 rounded-md text-left ${
-                    activeTab === tab.id ? "bg-green-700 text-white" : "hover:bg-gray-100"
+                    activeTab === tab.id ? "bg-blue-700 text-white" : "hover:bg-gray-100"
                   }`}
                   onClick={() => handleTabChange(tab.id)}
                 >

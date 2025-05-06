@@ -16,7 +16,7 @@ const Footer = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-green-700">VITAL-eR</span>
+                <span className="font-bold text-lg text-blue-700">VITAL-eR</span>
                 <span className="text-xs leading-tight">
                   Visual Intelligence and Autonomous Technologies in Robotics
                 </span>
@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {/* Social Media Icons */}
-              <Button variant="ghost" size="icon" className="rounded-full text-green-700 hover:text-green-800 hover:bg-green-100">
+              <Button variant="ghost" size="icon" className="rounded-full text-blue-700 hover:text-blue-800 hover:bg-blue-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -42,7 +42,7 @@ const Footer = () => {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full text-green-700 hover:text-green-800 hover:bg-green-100">
+              <Button variant="ghost" size="icon" className="rounded-full text-blue-700 hover:text-blue-800 hover:bg-blue-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -59,7 +59,7 @@ const Footer = () => {
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                 </svg>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full text-green-700 hover:text-green-800 hover:bg-green-100">
+              <Button variant="ghost" size="icon" className="rounded-full text-blue-700 hover:text-blue-800 hover:bg-blue-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -74,7 +74,7 @@ const Footer = () => {
                   <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                 </svg>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full text-green-700 hover:text-green-800 hover:bg-green-100">
+              <Button variant="ghost" size="icon" className="rounded-full text-blue-700 hover:text-blue-800 hover:bg-blue-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -96,26 +96,26 @@ const Footer = () => {
           
           <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="font-medium text-lg mb-4 text-green-800">Quick Links</h4>
+              <h4 className="font-medium text-lg mb-4 text-blue-800">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Home</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">About</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Courses</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Research</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Contact</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Home</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">About</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Courses</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Research</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-lg mb-4 text-green-800">Resources</h4>
+              <h4 className="font-medium text-lg mb-4 text-blue-800">Resources</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Publications</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Lab Resources</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Student Opportunities</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-green-700">Equipment</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Publications</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Lab Resources</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Student Opportunities</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-blue-700">Equipment</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-lg mb-4 text-green-800">Contact</h4>
+              <h4 className="font-medium text-lg mb-4 text-blue-800">Contact</h4>
               <address className="not-italic space-y-2 text-muted-foreground">
                 <p>YTU Yıldız Campus</p>
                 <p>Istanbul, Turkey</p>
